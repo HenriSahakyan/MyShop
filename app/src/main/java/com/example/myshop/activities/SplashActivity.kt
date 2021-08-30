@@ -9,15 +9,14 @@ import android.view.WindowInsets
 import android.view.WindowManager
 import androidx.databinding.DataBindingUtil
 import com.example.myshop.R
-import com.example.myshop.databinding.ActivityMainBinding
+
 
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_splash)
 
-        val binding: ActivityMainBinding =
-            DataBindingUtil.setContentView(this, R.layout.activity_splash)
 
         @Suppress("DEPRECATION")
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
@@ -32,7 +31,7 @@ class SplashActivity : AppCompatActivity() {
         @Suppress("DEPRECATION")
             Handler().postDelayed(
                 {
-                startActivity(Intent(this@SplashActivity, MainActivity::class.java))
+                startActivity(Intent(this@SplashActivity, LoginActivity::class.java))
                 finish()
                 },
         1500

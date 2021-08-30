@@ -8,4 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="darkGreen">#E4071001</color>
+    <color name="green">#E4183704</color>
+    <color name="lime">#427C04</color>
+    <color name="colorSnackBarSuccess">#8BC34A</color>
+    <color name="colorSnackBarError">#DC021B</color>
+    <color name="lightGrey">#F1F1F1</color>
+    <color name="grey">#AAA5A5</color>
 </resources>
